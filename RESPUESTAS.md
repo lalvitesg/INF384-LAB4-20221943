@@ -60,11 +60,11 @@ Link al run medido: https://github.com/lalvitesg/INF384-LAB4-20221943/actions/ru
 Resultado de load en ese run:
 | Métrica | Valor |
 |---|---|
-| p90 |  |
-| p95 | |
-| Máximo | |
-| Tasa de error | |
-| Requests por segundo | |
+| p90 | 1.15s |
+| p95 | 1.16s |
+| Máximo | 1.54s |
+| Tasa de error | 0.00% |
+| Requests por segundo | 23.91157/s |
 
 Conclusión sobre el comportamiento bajo carga:
 
