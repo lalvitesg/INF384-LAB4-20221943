@@ -75,14 +75,14 @@ SLA propuesto y diferencia con el SLO: El SLA propuesto sería un p95 por debajo
 Cambios para cumplir el presupuesto:
 | Cambio | Job | Minutos recuperados |
 |---|---|---|
-| reducir la carga de la prueba de 12 min a 4 min | load |  |
+| reducir la carga de la prueba de 12 min a 4 min | load | recuperar aprox 6 a 8 min |
 
-Total resultante: [ ] min
-Link al run en main con los cambios:
+Total resultante: [ 6:11 ] min
+Link al run en main con los cambios: https://github.com/lalvitesg/INF384-LAB4-20221943/actions/runs/40969250080
 
-Riesgo aceptado (defecto de la aplicación concreto y efecto en la métrica DORA asignada):
+Riesgo aceptado (defecto de la aplicación concreto y efecto en la métrica DORA asignada): El mayor riesgo es que la ventana queda mucho más corta, lo que podría hacer que se reduzca la probabilidad de detectar errores en el k6, también, el tráfico en la red y el p90 o p95
 
-Decisión sobre sast (se queda / se mueve a otra etapa o evento / informativo) y razón:
+Decisión sobre sast (se queda / se mueve a otra etapa o evento / informativo) y razón: El sast se queda, su tiempo no impacta en la duración el pipeline ya que se ejecuta en paralelo y dura aprox menos de 22s, por lo tanto, no impacta en la métrica de tiempo del commit al despliegue. Además, quitarlo sí impactaria en la métrica de errores por despliegue ya que se quitaría una verificación importante.
 
 ## Declaración de uso de IA
 Herramientas usadas y para qué:
