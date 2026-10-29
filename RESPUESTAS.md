@@ -1,6 +1,6 @@
 # Respuestas · Laboratorio 4
 Alumno: [20221943]
-Presupuesto: [ ] min  Métrica DORA: [ ]
+Presupuesto: [8] min  Métrica DORA: [change failure rate]
 
 ## Parte 1 · Diagnóstico
 ### Defecto 1
@@ -66,11 +66,11 @@ Resultado de load en ese run:
 | Tasa de error | 0.00% |
 | Requests por segundo | 23.91157/s |
 
-Conclusión sobre el comportamiento bajo carga:
+Conclusión sobre el comportamiento bajo carga: Bajo carga, el comportamiento es estable, según los datos, el promedio es de 1.15s y un mínimo de 1.13s, por lo que el p(95) indica un resultado estable. No obstante, podría ocurrir que en un caso como el máximo, se llegue a un poco más de latencia como 1.54s o más.
 
-SLO propuesto (percentil, valor, ventana) y justificación:
+SLO propuesto (percentil, valor, ventana) y justificación: Un SLO sería que el p95 se mantenga por debajo de 1.35s, ya que la diferencia entre el promedio y el p95 actual es mínima y se evita la variación entre ejecuciones. La ventana es la duración del job de load.
 
-SLA propuesto y diferencia con el SLO:
+SLA propuesto y diferencia con el SLO: El SLA propuesto sería un p95 por debajo de 1.8s, la diferencia con el SLO es que el SLA es el acuerdo entre nosotros y el cliente, mientras que el SLO es un objetivo de rendimiento interno, el cual tiene expectativas mayores que un SLA comercial o por reputación de la empresa.
 
 Cambios para cumplir el presupuesto:
 | Cambio | Job | Minutos recuperados |
@@ -85,3 +85,4 @@ Decisión sobre sast (se queda / se mueve a otra etapa o evento / informativo) y
 
 ## Declaración de uso de IA
 Herramientas usadas y para qué:
+Se usó la IA de Copilot para apoyar en la identificación de de defectos en la pregunta 1 y realizar la corrección de defectos para obtener el pipeline "todo verde" en la pregutna 2. También, se usó para introducir el defecto de la pregunta 2.
