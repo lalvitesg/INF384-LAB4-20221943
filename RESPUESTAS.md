@@ -75,6 +75,7 @@ SLA propuesto y diferencia con el SLO: El SLA propuesto sería un p95 por debajo
 Cambios para cumplir el presupuesto:
 | Cambio | Job | Minutos recuperados |
 |---|---|---|
+| reducir la carga de la prueba de 12 min a 4 min | load |  |
 
 Total resultante: [ ] min
 Link al run en main con los cambios:
@@ -85,4 +86,4 @@ Decisión sobre sast (se queda / se mueve a otra etapa o evento / informativo) y
 
 ## Declaración de uso de IA
 Herramientas usadas y para qué:
-Se usó la IA de Copilot para apoyar en la identificación de de defectos en la pregunta 1 y realizar la corrección de defectos para obtener el pipeline "todo verde" en la pregutna 2. También, se usó para introducir el defecto de la pregunta 2.
+Se usó la IA de Copilot para apoyar en la identificación de de defectos en la pregunta 1 y realizar la corrección de defectos para obtener el pipeline "todo verde" en la pregutna 2. También, se usó para introducir el defecto de la pregunta 2. También para la optimización del pipeline para quedar por debajo del presupuesto asignado.
