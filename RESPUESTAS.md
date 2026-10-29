@@ -36,31 +36,31 @@ Presupuesto: [ ] min  Métrica DORA: [ ]
 
 ## Parte 2 · Implementación
 - Link al run en verde en main: https://github.com/lalvitesg/INF384-LAB4-20221943/actions/runs/40964057011
-- Link al pull request: 
-- Defecto de la aplicación introducido (archivo y descripción):
-- Job que debería detenerlo:
-- Link al run fallido:
+- Link al pull request: https://github.com/lalvitesg/INF384-LAB4-20221943/pull/1
+- Defecto de la aplicación introducido (archivo y descripción): En src/wallet.jsm se eliminó la validación que comprubea si el origin tine saldo suficiente antes de ejecutar una trasferencia.
+- Job que debería detenerlo: El job unit, de pruebas unitarias
+- Link al run fallido: https://github.com/lalvitesg/INF384-LAB4-20221943/actions/runs/40965495544/job/123768822708?pr=1
 
 ## Parte 3 · Decisión bajo restricción
-Link al run medido:
+Link al run medido: https://github.com/lalvitesg/INF384-LAB4-20221943/actions/runs/40964057011
 
 | Job | Duración (min:seg) |
 |---|---|
-| unit | |
-| integration | |
-| sast | |
-| sca | |
-| build-push | |
-| deploy | |
-| smoke | |
-| e2e | |
-| load | |
-| **Total** | |
+| unit | 0:12 |
+| integration | 0:10 |
+| sast | 0:22 |
+| sca | 0:18 |
+| build-push | 0:43 |
+| deploy | 0:16 |
+| smoke | 0:08 |
+| e2e | 0:33 |
+| load | 12:13 |
+| **Total** | 14:55 |
 
 Resultado de load en ese run:
 | Métrica | Valor |
 |---|---|
-| p90 | |
+| p90 |  |
 | p95 | |
 | Máximo | |
 | Tasa de error | |
